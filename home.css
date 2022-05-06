@@ -7,8 +7,6 @@
 body{
     font-family:'Montserrat', sans-serif;
     position: relative;
-    display: block;
-    height: 100%;
 }
 /*______________________________background________________________________*/
 .background{
@@ -72,40 +70,51 @@ body{
     color: rgba(22, 21, 21, 0.571);
     border-radius: 14px;
     transition: ease-in 0.s;
-    
 }
-/*______________________________about____________________________________*/
-.about{
+/*______________________________main____________________________________*/
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items:center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
-.about img{
-    width: 100%;
-    grid-column: 1/5;
+h1{
+    font-size: 3em;
 }
-.about-info{
-    grid-column: 5/10;
-    padding: 3em;
-}
-.about-info h2{
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.5);
+ span{
+    color:rgba(141, 12, 180, 0.5);
+ }
+.see-more{
+    padding: 10px 20px;
+    background-color: rgba(141, 12, 180, 0.5);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(22, 21, 21, 0.571);
 }
 
+.see-more:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
 
+.main img{
+    width: 350px;
+    border: 7px solid rgba(141, 12, 180, 0.5);
+    width: 350px;
+    height: 520px;
+    z-index: 1;
+}
 .divider{
     height: 4px;
     width: 60px;
     background-color: rgba(141, 12, 180, 0.5);
     margin-top: 5px;
     margin-bottom: 2em;
-}
-
-.about p{
-    margin-bottom: 1em;
 }
 /*______________________________footer____________________________________*/
 .footer{

@@ -7,8 +7,6 @@
 body{
     font-family:'Montserrat', sans-serif;
     position: relative;
-    display: block;
-    height: 100%;
 }
 /*______________________________background________________________________*/
 .background{
@@ -72,40 +70,66 @@ body{
     color: rgba(22, 21, 21, 0.571);
     border-radius: 14px;
     transition: ease-in 0.s;
-    
 }
-/*______________________________about____________________________________*/
-.about{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+/*______________________________contact____________________________________*/
+.contact{
     width: 100vw;
-    align-items:center;
 }
-
-.about img{
-    width: 100%;
-    grid-column: 1/5;
+.contact-heading{
+    width: 100vw;
+    padding: 5em;
 }
-.about-info{
-    grid-column: 5/10;
-    padding: 3em;
-}
-.about-info h2{
-    font-size: 2em;
+.contact-heading h2{
+    font-size: 3em;
     color: rgba(255, 255, 255, 0.5);
 }
+.container-contact{
+    padding: 2.5em;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.contact-form h4{
+    color: rgba(22, 21, 21, 0.571);
+}
 
+.container-contact img{
+    width: 750px;
+    height: 750px;
+    text-align: left;
+}
 
+.form{
+    display: flex;
+    text-align: rights;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(141, 12, 180, 0.5);
+    color: rgba(22, 21, 21, 0.571);
+}
+.form textarea{
+    height: 150px;
+    background: none;
+    color:rgba(22, 21, 21, 0.571);
+    padding: 1.5em;
+    border: 1px solid rgba(141, 12, 180, 0.5);
+}
 .divider{
     height: 4px;
     width: 60px;
     background-color: rgba(141, 12, 180, 0.5);
     margin-top: 5px;
     margin-bottom: 2em;
-}
-
-.about p{
-    margin-bottom: 1em;
 }
 /*______________________________footer____________________________________*/
 .footer{
