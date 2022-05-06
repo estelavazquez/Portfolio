@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    position: relative;
+    display: block;
+    height: 100%;
+}
+/*______________________________background________________________________*/
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%{
+  
+  
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+}
+/*______________________________menu____________________________________*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: rgba(22, 21, 21, 0.4);
+}
+.brand{
+    margin-top: -7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.brand span {
+    color: rgba(141, 12, 180, 0.5);
+}
+ .menu li{
+     list-style: none;
+ }
+ .menu a{
+     color: rgba(255, 255, 255, 0.5);
+     text-decoration: none;
+     padding: 10px 20px;
+     border-radius: 14px;
+ }
+ .menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+ }
+.menu .active{
+    color: rgba(22, 21, 21, 0.571);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+ .menu a:hover{
+    background-color: rgba(141, 12, 180, 0.5);
+    color: rgba(22, 21, 21, 0.571);
+    border-radius: 14px;
+    transition: ease-in 0.s;
+    
+}
+/*______________________________about____________________________________*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items:center;
+}
+
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+.about-info h2{
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: rgba(141, 12, 180, 0.5);
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.about p{
+    margin-bottom: 1em;
+}
+/*______________________________footer____________________________________*/
+.footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(22, 21, 21, 0.4);
+    text-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.footer-content h2{
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.5);
+}
+.footer-content h5{
+    color: rgba(255, 255, 255, 0.2);
+    margin-left: 1em;
+    font-size: 0.5em;
+    font-style: italic;
+}
+.social-network{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    width: 300px;
+    margin-top: 0.5em;
+}
+
+.social-network i{
+    font-size: 1em;
+    align-items: center;
+    color:rgba(141, 12, 180, 0.5);
+}
+/*____ ___________________________button________________________________*/
+.see-more{
+    padding: 10px 20px;
+    background-color: rgba(141, 12, 180, 0.5);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(22, 21, 21, 0.571);
+}
+
+.see-more:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
