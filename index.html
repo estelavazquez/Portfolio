@@ -1,0 +1,269 @@
+<!--31:37 - Portfolio completo responsive - Paso a Paso - HTML CSS JAVASCRIPT-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Com`patible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Estela</title>
+</head>
+
+<body>
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/SO/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio"onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto"onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <!--ICONOS DEL MENU-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--ICONOS RRSS-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/estelavazquez"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/estela-paretas-35707a24a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Estela</span>, Desarrolladora Web</h2>
+                <p class="descripcion">Prácticas en SoftwareONE </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+    <!-- SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/recursos/Imagen3.jpeg" alt=""> 
+        </div>
+        <div class="sobremi">
+            <p class="titulo">Sobre Mí</p>
+            <h2>Hola, soy <span>Estela Vázquez</span></h2>
+            <h3>Desarrolladora Web</h3>
+            <p>Tengo 18 años, y lo que realmente me apasiona es la parte de FRONT. SoftwareONE me hecho darme cuenta de lo que realmente me gusta y a lo que quiero dedicarme. </p>
+            <p>Me encanta sobre todo la parte de diseño de apps y webs.</p>
+            <p>He aprendido sobre todo de HTML, CSS & JS.</p>
+            <a href="#">Descargar CV</a>
+
+        </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="https://www.figma.com/file/GHq2mBw6SgthbdU6LpHdz0/BycicletONEs?node-id=0%3A1">E-Bikes</a></h4>
+                <hr>
+                <p>Project with Germany & my teammates.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="https://www.figma.com/file/eEWJTjYeWjuifuozDTHKNN/Roomie?node-id=0%3A1">Roomie</a></h4>
+                <hr>
+                <p>App de booking en Santiago de Compostela.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="">Título</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="">Título</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="">Título</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4><a href="">Título</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Html & CSS</span></p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">JAVASCRIPT</span></p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">SQL</span></p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="sql" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">JAVA</span></p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/javascript.jpg" alt="">
+               
+                <div class="info">
+                    <a href="/Projects/JavaScript/Authoritation Form.js">Authoritation Form</a>
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/javascript.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/JavaScript/Bouncing Balls.js">Bouncing Balls</a>
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/javascript.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/JavaScript/Kelvin Weather.js">Kelvin Weather</a>
+                    <p>JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto" href="tables.sql">
+                <div class="overlay"></div>
+                <img src="/recursos/sql.jpg" >
+                <div class="info">
+                    <a href="/Projects/SQL/Tables.sql">Create a Table</a>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/sql.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/SQL/New York Restaurants - Estela Vázquez Paretas.sql">New York Restaurants</a>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/sql.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/SQL/Codey's Confectioneries - Estela Vázquez Paretas.js">Codey's Confectioneries</a>
+                    <p>SQL + JAVASCRIPT</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/java.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/Java/Magic8.java">Magic-8 Ball</a>
+                    <p>JAVA</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/java.jpg" alt="">
+                <div class="info">
+                    <a href="/Projects/Java/TransitCalculator.java">Best Fare Calculator</a>
+                    <p>JAVA</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/recursos/java.jpg" alt="">
+                <div class="info">
+                    <a href="">Título del Proyecto</a>
+                    <p>JAVA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo">CONTACTA CONMIGO</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p> Estela Vázquez Paretas - 2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/estelavazquez"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/estela-paretas-35707a24a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="Untitled-3.js"></script>
+</body>
+
+</html>
